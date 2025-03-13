@@ -5,6 +5,40 @@
   <title>ZetFuze | Next-Gen Experience</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background: radial-gradient(ellipse at center, #02010a, #000000);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      perspective: 1200px;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .logo-text {
+      font-size: 10rem;
+      font-weight: 700;
+      background: linear-gradient(270deg, #00ffff, #ff00ff, #00ffff);
+      background-size: 800%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textGlow 8s ease-in-out infinite, neuralFlow 4s linear infinite;
+      filter: drop-shadow(0 0 50px rgba(0, 255, 255, 0.8)) drop-shadow(0 0 120px rgba(255, 0, 255, 0.6));
+    }
+  </style>
+
   <style>
     * {
       margin: 0;
